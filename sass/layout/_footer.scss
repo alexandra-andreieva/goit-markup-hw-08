@@ -1,0 +1,171 @@
+.basement {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.adress {
+  margin-top: 20px;
+}
+
+.basement-adress,
+.basement-mail,
+.basement-number {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $another-title-color;
+}
+
+.basement-mail,
+.basement-number {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.basement-join,
+.mail-title {
+  display: block;
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $another-title-color;
+}
+
+.join-us {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.join-us-tag {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-us-icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: $another-title-color;
+}
+
+.join-us-link {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.join-us-tag {
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.mail-input {
+  width: calc(100%);
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $another-title-color;
+}
+
+.mail-input {
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.mail-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mail-subscribe {
+  margin-right: 10px;
+}
+
+.mail-icon {
+  width: 24px;
+  height: 24px;
+  fill: $another-title-color;
+}
+
+@media screen and (min-width: 480px) {
+  .mail-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .basement-tablet {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .basement-join {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .basement-name {
+    margin-right: 165px;
+    .logo {
+      margin-right: 0;
+    }
+  }
+  .basement-mail,
+  .basement-number {
+    display: inline-block;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basement {
+    text-align: start;
+  }
+  .basement-nav {
+    display: flex;
+    align-items: baseline;
+  }
+  .basement-name {
+    margin-right: 80px;
+    .logo {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  .join {
+    margin-right: 94px;
+  }
+  .mail-title {
+    margin-top: 0px;
+  }
+  .mail-container {
+    display: flex;
+  }
+  .mail-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}

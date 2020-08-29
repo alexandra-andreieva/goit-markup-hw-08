@@ -1,0 +1,51 @@
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}
+
+.activity {
+  padding-bottom: 94px;
+}
+
+.activity-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: $primary-text-color;
+}
+
+.activity-list {
+  display: flex;
+}
+
+.activity-list-item {
+  position: relative;
+}
+
+.activity-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.activity-type {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  right: 0;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+
+  color: $another-title-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
