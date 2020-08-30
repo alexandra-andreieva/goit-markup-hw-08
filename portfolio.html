@@ -67,10 +67,10 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main class="portfolio-page">
       <!--Примеры работ-->
       <section class="our-examples container">
-        <h1 hidden>Наши работы</h1>
+        <h1 class="examples-headline">Наши работы</h1>
 
         <ul class="examples-filter list">
           <li class="item">
@@ -78,19 +78,20 @@
           </li>
 
           <li class="item">
-            <button class="button-primary" type="button">Веб-сайты</button>
+            <button class="button-portfolio" type="button">Веб-сайты</button>
           </li>
 
           <li class="item">
-            <button class="button-primary" type="button">Приложения</button>
+            <button class="button-portfolio" type="button">Приложения</button>
           </li>
 
           <li class="item">
-            <button class="button-primary" type="button">Дизайн</button>
+            <button class="button-portfolio" type="button">Дизайн</button>
           </li>
+          -
 
           <li class="item">
-            <button class="button-primary" type="button">Маркетинг</button>
+            <button class="button-portfolio" type="button">Маркетинг</button>
           </li>
         </ul>
 
@@ -98,13 +99,33 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Веб-сайт">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/website.jpg"
-                  alt="Веб-сайт"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/wsite-desktop.jpg    1x,
+                      ./img/wsite-desktop@2x.jpg 2x,
+                      ./img/wsite-desktop@2x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/wsite-tablet.jpg    1x,
+                      ./img/wsite-tablet@2x.jpg 2x,
+                      ./img/wsite-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/wsite-mob.jpg"
+                    srcset="
+                      ./img/wsite-mob@2x.jpg 2x,
+                      ./img/wsite-mob@3x.jpg 3x
+                    "
+                    alt="Ноутбук"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -121,13 +142,33 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Дизайн">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/poster.jpg"
-                  alt="Дизайн"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/design-desktop.jpg    1x,
+                      ./img/design-desktop@2x.jpg 2x,
+                      ./img/design-desktop@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/design-tablet.jpg    1x,
+                      ./img/design-tablet@2x.jpg 2x,
+                      ./img/design-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/design-mob.jpg"
+                    srcset="
+                      ./img/design-mob@2x.jpg 2x,
+                      ./img/design-mob@3x.jpg 3x
+                    "
+                    alt="Баскетбол"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -146,13 +187,33 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Приложение">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/restaurant.jpg"
-                  alt="Приложение"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/restaurant-desktop.jpg    1x,
+                      ./img/restaurant-desktop@2x.jpg 2x,
+                      ./img/restaurant-desktop@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/restaurant-tablet.jpg    1x,
+                      ./img/restaurant-tablet@2x.jpg 2x,
+                      ./img/restaurant-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/restaurant-mob.jpg"
+                    srcset="
+                      ./img/restaurant-mob@2x.jpg 2x,
+                      ./img/restaurant-mob@3x.jpg 3x
+                    "
+                    alt="Рыбный ресторан"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -171,13 +232,33 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Маркетинг">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/project.jpg"
-                  alt="Маркетинг"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/project-desktop.jpg    1x,
+                      ./img/project-desktop@2x.jpg 2x,
+                      ./img/project-desktop@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/project-tablet.jpg    1x,
+                      ./img/project-tablet@2x.jpg 2x,
+                      ./img/project-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/project-mob.jpg"
+                    srcset="
+                      ./img/project-mob@2x.jpg 2x,
+                      ./img/project-mob@3x.jpg 3x
+                    "
+                    alt="Наушники"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -194,13 +275,33 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Приложение">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/app.jpg"
-                  alt="Приложение"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/application-desktop.jpg    1x,
+                      ./img/application-desktop@2x.jpg 2x,
+                      ./img/application-desktop@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/application-tablet.jpg    1x,
+                      ./img/application-tablet@2x.jpg 2x,
+                      ./img/application-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/application-mob.jpg"
+                    srcset="
+                      ./img/application-mob@2x.jpg 2x,
+                      ./img/application-mob@3x.jpg 3x
+                    "
+                    alt="Приложение коробки"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -217,13 +318,30 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Веб-сайт">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/pc.jpg"
-                  alt="Веб-сайт"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/site-desktop.jpg    1x,
+                      ./img/site-desktop@2x.jpg 2x,
+                      ./img/site-desktop@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/site-tablet.jpg    1x,
+                      ./img/site-tablet@2x.jpg 2x,
+                      ./img/site-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/site-mob.jpg"
+                    srcset="./img/site-mob@2x.jpg 2x, ./img/site-mob@3x.jpg 3x"
+                    alt="Монитор"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -240,13 +358,33 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Дизайн">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/design.jpg"
-                  alt="Дизайн"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/edition-desktop.jpg    1x,
+                      ./img/edition-desktop@2x.jpg 2x,
+                      ./img/edition-desktop@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/edition-tablet.jpg    1x,
+                      ./img/edition-tablet@2x.jpg 2x,
+                      ./img/edition-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/edition-mob.jpg"
+                    srcset="
+                      ./img/edition-mob@2x.jpg 2x,
+                      ./img/edition-mob@3x.jpg 3x
+                    "
+                    alt="Издание"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -265,13 +403,33 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Маркетинг">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/marketing.jpg"
-                  alt="Маркетинг"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/marketing-desktop.jpg    1x,
+                      ./img/marketing-desktop@2x.jpg 2x,
+                      ./img/marketing-desktop@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/marketing-tablet.jpg    1x,
+                      ./img/marketing-tablet@2x.jpg 2x,
+                      ./img/marketing-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/marketing-mob.jpg"
+                    srcset="
+                      ./img/marketing-mob@2x.jpg 2x,
+                      ./img/marketing-mob@3x.jpg 3x
+                    "
+                    alt="Этикетка"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -288,13 +446,30 @@
           <li class="examples-list-item">
             <a class="examples-link" href="" aria-label="Приложение">
               <div class="examples-description-photo">
-                <img
-                  class="photo"
-                  src="./img/laptop.jpg"
-                  alt="Приложение"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./img/app-desktop.jpg    1x,
+                      ./img/app-desktop@2x.jpg 2x,
+                      ./img/app-desktop@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/app-tablet.jpg    1x,
+                      ./img/app-tablet@2x.jpg 2x,
+                      ./img/app-tablet@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    class="example__photo"
+                    src="./img/app-mob.jpg"
+                    srcset="./img/app-mob@2x.jpg 2x, ./img/app-mob@3x.jpg 3x"
+                    alt="Открытый веб-сайт на ноутбуке"
+                  />
+                </picture>
                 <p class="examples-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
